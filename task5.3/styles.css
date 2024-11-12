@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+table {
+    max-width: 420px;
+    max-height: 420px;
+    border: 2px solid;
+    margin: 0 auto;
+    display: flex;
+}
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background: #ececec;
+}
