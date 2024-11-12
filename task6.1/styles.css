@@ -1,0 +1,41 @@
+
+h1 {
+    font-size: 40px;
+    position: relative;
+    left: 45%;
+    display: inline-block;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    left: -220px; /* Лінія перед текстом */
+    top: 50%; /* Вирівнюємо лінії по вертикалі по центру заголовка */
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(-50%); /* Вирівнюємо лінії по центру по вертикалі */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    right: -220px; /* Лінія після тексту */
+    top: 50%; /* Вирівнюємо лінії по вертикалі по центру заголовка */
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(-50%); /* Вирівнюємо лінії по центру по вертикалі */
+}
+
+
+
+/*h1::before {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 200px; !* Довжина ліній *!*/
+/*    height: 5px;*/
+/*    background-color: black;*/
+/*}*/
+
+
