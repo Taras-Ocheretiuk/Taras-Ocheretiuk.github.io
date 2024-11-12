@@ -97,6 +97,13 @@ h1 {
     font-size: 24px;
     font-weight: bold;
 }
+.tasks-container{
+    display: flex;
+}
+.tasks-box{
+    margin: 5px;
+    padding: 5px;
+}
 
 
 
