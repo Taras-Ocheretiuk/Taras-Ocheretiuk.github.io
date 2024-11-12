@@ -1,0 +1,27 @@
+
+div {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 50px solid blue;    /* Зовнішнє синє коло */
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    background-color: yellow;   /* Жовте коло */
+    position: relative;         /* Відносне позиціювання для псевдоелементів */
+    z-index: 1;                 /* Робимо впевнений стековий порядок */
+}
+
+div::after {
+    content: '';
+    position: absolute;
+    width: 120px;               /* Розмір білого кола */
+    height: 120px;
+    background-color: white;    /* Біле коло */
+    border-radius: 50%;
+    top: 50%;                   /* Центрування вертикально */
+    left: 50%;                  /* Центрування горизонтально */
+    transform: translate(-50%, -50%); /* Переміщення в центр */
+    z-index: -1;                /* Переміщуємо біле коло позаду тексту */
+}
