@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Black-box{
+    padding-top: 100px;
+    width: auto;
+    height: 100vh;
+    background-color: black;
+}
+
+.box {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: auto;
+
+    width: 1054px;
+    height: 530px;
+    background: linear-gradient(135deg, #251e1f 0%,#443836 100%);
+    position: relative; /* Додаємо відносне позиціонування для блоку .box */
+}
+.Fixed-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    color: white;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    background-color: black;
+}
+.White-box{
+    display: flex;
+    background-color: white;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}
+.image-container {
+    display: flex;
+    padding: 0;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+}
+.Burger{
+    display: flex;
+    padding: 0;
+    height: 100%;
+}
+.Burger-Italian{
+    display: flex;
+    flex-direction: column; /* Елементи будуть вирівняні по вертикалі */
+    justify-content: center;  /* Вирівнювання по горизонталі (опціонально) */
+    align-items: center;
+    /*text-align: center;*/
+    padding: 10px 120px;
+    color: white;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+.Big-text{
+    font-size: 36px;
+    font-weight: bold;
+}
+.yellow-text{
+    color: yellow;
+}
+.White-box-Text{
+    width: 100%;
+    height: 100%;
+}
+.Title {
+    height: 25%;
+    width:  100%;
+    font-size: 20px;
+    text-align: center; /* Опціонально для вирівнювання тексту по центру */
+    display: flex; /* Додаємо flex для вирівнювання */
+    justify-content: center; /* Вирівнюємо по горизонталі */
+    align-items: center;
+}
+.Product-box{
+    display: flex;
+    height: 75%;
+    width: 100%;
+}
+.right-sige{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+.left-side{
+    height: 100%;
+    width: 50%;
+}
+.Product-card{
+    display: flex;            /* Використовуємо flexbox */
+    flex-direction: column;   /* Вирівнюємо елементи по вертикалі */
+    justify-content: center;  /* Вирівнюємо елементи по вертикалі по центру */
+    align-items: center;
+    width: 100%;
+    height: 33%;
+}
+.name-product{
+    font-size: 18px;
+}
+.prise{
+    color: gray;
+    margin: 4px auto;
+}
+.inlane{
+    display: flex; /* Встановлюємо display: flex для розміщення елементів у рядок */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+}
+.diamond {
+    width: 10px; /* Ширина */
+    height: 10px; /* Висота */
+    background-color: gray; /* Колір ромба */
+    transform: rotate(45deg); /* Поворот на 45 градусів */
+    margin: 2px auto; /* Центрування на сторінці */
+    border: solid gray;
+}
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: grey;
+}
