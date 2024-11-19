@@ -1,167 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Очеретюк</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body>
-<div class="page-wrapper">
-    <div class="left-side">
-        <div class="image-container">
-            <img src="images/photo_Ocheretiuk.jpg"
-                 alt="Face photo">
-        </div>
-        <div class="left-side__content">
-            <div class="content-item">
-                <div class="content-item__title">
-                    Особисті дані
-                </div>
-                <div class="content-item__text">
-                    <ul>
-                        <li><span class="font-b d-blok marg-bot">Прізвище Ім'я</span> <span>Очеретюк Тарас</span></li>
-                        <li><span class="font-b d-blok marg-bot">Номер телефону:</span>
-                            <span>
-                                        <a href="tel:+380674454612">+38 067 445 46 12</a>
-                                    </span>
-                        </li>
-                        <li><span class="font-b d-blok marg-bot">Посилання на Соцмережі</span>
-                            <span>
-                                        <a href="http://www.linkedin.com/in/taras-ocheretiuk-6a31a7231/"
-                                           target="_blank">Linkedin</a>
-                                    </span>
-                        </li>
-                        <li><span class="font-b d-blok marg-bot">Email</span>
-                            <span>
-                                        <a href="mailto:my.forest.ranger@gmail.com">my.forest.ranger@gmail.com</a>
-                                    </span>
-                        </li>
-                    </ul>
+<html>
+    
+	<head>
+		<title>Background Images — Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+    
+    <body>
+        
+        <header>
+            <div id="topbar">
+                <div class="container">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#tour">Tour</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#subscribe">Subscribe</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-
-            <div class="content-item">
-                <div class="content-item__title">
-                    Інтереси
-                </div>
-                <div class="content-item__text">
-                    <ul>
-                        <li><span class="font-b">Програмування</span></li>
-                        <li><span class="font-b">Стрілкова зброя</span></li>
-                        <li><span class="font-b">Плавання</span></li>
-                        <li><span class="font-b">Єдиноборства</span></li>
-                    </ul>
-                </div>
+            <div class="container">
+                <h1>Super Duper Metal Band</h1>
+                <a href="#" class="button">Go back to the lesson</a>
             </div>
-
-            <div class="content-item">
-                <div class="content-item__title">
-                    Мови
+        </header>
+        
+        <div id="tour">
+            <div class="container">
+                <h2>Tour</h2>
+                <div class="tour-card madrid">
+                    <h3 class="tour-town">Madrid, Spain</h3>
+                    <p class="tour-place"><i class="fa fa-map-marker" aria-hidden="true"></i> Wizink Center</p>
+                    <p class="tour-date">October 7, 2017</p>
+                    <a href="#" class="button">Buy tickets</a>
                 </div>
-                <div class="content-item__text">
-                    <ul>
-                        <li class="d-flex"><span class="font-b ">Українська</span> <span class="pull-r">Рідна</span>
-                        </li>
-                        <li class="d-flex"><span class="font-b ">Англійська</span><span
-                                class="pull-r">Середній рівень</span>
-                    </ul>
+                <div class="tour-card turin">
+                    <h3 class="tour-town">Turin, Italy</h3>
+                    <p class="tour-place"><i class="fa fa-map-marker" aria-hidden="true"></i> Pala Alpitour</p>
+                    <p class="tour-date">October 14, 2017</p>
+                    <a href="#" class="button">Buy tickets</a>
+                </div>
+                <div class="tour-card hamburg">
+                    <h3 class="tour-town">Hamburg, Germany</h3>
+                    <p class="tour-place"><i class="fa fa-map-marker" aria-hidden="true"></i> Barclaycard Arena</p>
+                    <p class="tour-date">November 6, 2017</p>
+                    <a href="#" class="button">Buy tickets</a>
+                </div>
+                <div class="tour-card krakow">
+                    <h3 class="tour-town">Kraków, Poland</h3>
+                    <p class="tour-place"><i class="fa fa-map-marker" aria-hidden="true"></i> Tauron Arena</p>
+                    <p class="tour-date">November 12, 2017</p>
+                    <a href="#" class="button">Buy tickets</a>
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-01.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-01-min.jpg" alt="" /></a>
+                </figure>
 
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-02.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-02-min.jpg" alt="" /></a>
+                </figure>
 
-    <div class="right-side">
-        <h1>Очеретюк Тарас</h1>
-        <div class="content-item">
-            <div class="Right-content-item__title">
-                Досвід роботи
-            </div>
-            <div class="content-item__text">
-                <ul>
-                    <li class="d-flex"><span class="font-b d-blok">Junior General QA Python Selenium</span>
-                        <span class="pull-r">2024-теп. час</span></li>
-                    <li class="italic-text">Fintellect, Київ</li>
-                    <li class="d-flex"><span class="font-b">Junior QA Engineer</span><span
-                            class="pull-r">2023-2024</span></li>
-                    <li class="italic-text">Fintellect, Київ</li>
-                    <li class="d-flex"><span class="font-b">Керівник цеху по виробництву паливних гранул</span><span
-                            class="pull-r">2020-2022</span></li>
-                    <li class="italic-text">ТОВ Макпеллєт, Київська обл.</li>
-                    <li class="d-flex"><span class="font-b">Лісничий</span><span class="pull-r">2015-2019</span></li>
-                    <li class="italic-text"> ДП Макарівське лісове господарство</li>
-                    <li class="d-flex"><span class="font-b">Національна Гвардія України</span><span
-                            class="pull-r">2014</span></li>
-                    <li class="italic-text"> Четвертий Батальйон Оперативного Призначення, Івано-Франківськ</li>
-                    <li class="d-flex"><span class="font-b">Помічник лісничого</span><span
-                            class="pull-r">2010-2014</span></li>
-                    <li class="italic-text"> ДП Макарівське лісове господарство</li>
-                </ul>
-            </div>
-        </div>
-        <div class="Right-content-item__title">
-            Освіта і Кваліфікація
-        </div>
-        <div class="content-item__text">
-            <ul>
-                <li class="d-flex"><span class="font-b d-blok">Test Automation using Selenium WebDriver (Python) course</span>
-                    <span class="pull-r">2023-2024</span></li>
-                <li class="italic-text">QA Light</li>
-                <li class="d-flex"><span class="font-b">Quality Assurance / Quality Control</span><span
-                        class="pull-r">2022-2023</span></li>
-                <li class="italic-text">Logos IT-Academy</li>
-                <li class="d-flex"><span class="font-b">Elementary English</span><span
-                        class="pull-r">2022-2023</span></li>
-                <li class="italic-text">Lingua Nova</li>
-                <li class="d-flex"><span class="font-b">Master's degree, Forestry Engineer</span><span class="pull-r">2004-2010</span>
-                </li>
-                <li class="italic-text">National University of Life and Environmental Sciences of Ukraine</li>
-            </ul>
-        </div>
-        <div class="Right-content-item__title">
-            Мої Роботи
-        </div>
-        <div class="content-item__text">
-        </div>
-        <div class="tasks-container">
-            <div class="tasks-box">
-                <a href="task5.1/index.html">task5.1</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task5.2/index.html">task5.2</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task5.3/index.html">task5.3</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task6.1/index.html">task6.1</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task6.2.1/index.html">task6.2.1</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task6.2.2/index.html">task6.2.2</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task6.2.3/index.html">task6.2.3</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task6.2.4/index.html">task6.2.4</a>
-            </div>
-        </div>
-        <div class="tasks-container">
-            <div class="tasks-box">
-                <a href="task7/index.html">task7</a>
-            </div>
-            <div class="tasks-box">
-                <a href="task9/index.html">task9</a>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-03.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-03-min.jpg" alt="" /></a>
+                </figure>
 
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-04.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-04-min.jpg" alt="" /></a>
+                </figure>
+
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-05.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-05-min.jpg" alt="" /></a>
+                </figure>
+
+                <figure class="photo">
+                    <a href="img/gallery/originals/gallery-06.jpg" data-lightbox="roadtrip"><img src="img/gallery/gallery-06-min.jpg" alt="" /></a>
+                </figure>
+            </div>
+        </div>
+        
+        <div id="subscribe">
+            <div class="container">
+                <div class="pitch">
+                    <h2>Subscribe</h2>
+                    <p>Subscribe to get the latest news about band right to your inbox.<p>
+                </div>
+                <form action="" method="post" class="subscribe-form">
+                    <input type="email" name="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-apple"></i></a>
+                    <a href="#"><i class="fa fa-spotify"></i></a>
+                    <a href="#"><i class="fa fa-soundcloud"></i></a>
+                </div>
+                <p class="copyright">© All Rights Reserved</p>
+            </div>
+        </footer>
+        
+        <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    </body>
 </html>
