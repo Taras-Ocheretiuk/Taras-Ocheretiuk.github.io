@@ -56,6 +56,24 @@ img.header-logo__title{
     cursor: pointer;
     color: var(--light-color);
 }
+/* виніс в основну частину тому що в мендіа запитах це треба кожен раз повторювати, в мобайлі воно все одно приходується*/
+ul.main-menu {
+    color: var(--light-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+/* виніс в основну частину тому що в мендіа запитах це треба кожен раз повторювати, в мобайлі воно все одно приходується*/
+nav.hide-mobile-login a {
+    color: var(--light-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+    margin-right: 36px;
+}
 
 /*----- Media Quries -----*/
 
@@ -98,27 +116,18 @@ img.header-logo__title{
     }
     .first-screen header nav.hide-mobile{
         display: flex;
-        width: 747px;
     }
     ul.main-menu {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        gap: 7px;
     }
-
+    nav.hide-mobile-login{
+        display: block;
+    }
+    nav.hide-mobile-login a {
+        margin-right: 7px;
+    }
     header nav.hide-desktop{
         display: none;
-    }
-    nav.login a {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        margin-right: 8px;
     }
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
@@ -148,27 +157,14 @@ img.header-logo__title{
 
     .first-screen header nav.hide-mobile{
         display: flex;
-        width: 830px;
     }
-    ul.main-menu {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        display: flex;
-        align-items: center;
-        gap: 32px;
+
+    nav.hide-mobile-login{
+        display: block;
     }
 
     header nav.hide-desktop{
         display: none;
-    }
-    nav.login a {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        margin-right: 36px;
     }
 }
 @media (min-width: 1440px)  {
@@ -193,27 +189,14 @@ img.header-logo__title{
     }
     .first-screen header nav.hide-mobile{
          display: flex;
-         width: 980px;
-    /*   Оце мені не подобається як зробити так що воно плавно розміщувалося */
     }
-    ul.main-menu {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        display: flex;
-        align-items: center;
-        gap: 32px;
+
+    nav.hide-mobile-login{
+        display: block;
     }
+
     header nav.hide-desktop{
         display: none;
     }
-    nav.login a {
-        color: var(--light-color);
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
-        margin-right: 36px;
-    }  /*  як прописати щоб не повторювати це у всіх розмірах */
 }
 /*----- End Media Quries -----*/
