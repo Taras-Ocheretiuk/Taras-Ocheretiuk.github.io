@@ -60,4 +60,24 @@ ul{
     display: none;
 }
 
-/*медіазапити проміжки 1,40,01*/
+.show-menu{
+    left: 32px;
+    transition: all .7s ease;
+}
+
+.btn{
+    color: var(--light-color);
+    height: 64px;
+    border-radius: 12px;
+    background-color: var(--orange-color);
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.btn__header {
+    width: 134px;
+}

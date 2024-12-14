@@ -2,14 +2,13 @@
     height: 100vh;
     background-image: url('../img/main-bg.jpg');
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     background-position: left;
+/*    розібратися має картинка бути трохи обрізана без неба*/
 }
 
 header{
     height: 98px;
     align-items: center;
-    background-color: #172432;
 }
 
 .header-logo{
@@ -28,10 +27,6 @@ img.header-logo__title{
     margin: 4.32px 0 4.32px;
 }
 
-.main-menu{
-
-}
-
 .mobile-menu{
     width: calc(100vw - 64px);
     height: calc(100vh - 98px);
@@ -42,6 +37,7 @@ img.header-logo__title{
     align-items: center;
     gap: 20px;
     font-size: 2rem;
+    transition: all .7s ease;
     background-color: var(--light-color);
     border-radius: 15px;
 }
@@ -56,8 +52,9 @@ img.header-logo__title{
 }
 
 .burger-icons{
-    font-size: 2.5rem;
+    font-size: 3rem;
     cursor: pointer;
+    color: var(--light-color);
 }
 
 /*----- Media Quries -----*/
@@ -80,6 +77,10 @@ img.header-logo__title{
     }
 }
 @media (min-width: 768px) and (max-width: 1152px) {
+    html body.first-screen{
+        background-size: cover;
+        background-position: bottom; /*  ------- НЕ СПРАЦЬОВУЄ   */
+    }
     header{
         height: 114px;
     }
@@ -95,22 +96,35 @@ img.header-logo__title{
         height: 27.47px;
         margin: 4.18px 0 4.18px;
     }
-    header nav.hide-mobile{
-        display: block;
+    .first-screen header nav.hide-mobile{
+        display: flex;
+        width: 747px;
     }
+    ul.main-menu {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
     header nav.hide-desktop{
         display: none;
     }
-    .first-screen{
-        background-size: cover;
-        background-position: center;
+    nav.login a {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        margin-right: 8px;
     }
-
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
     .first-screen{
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
     }
 
     header{
@@ -132,19 +146,35 @@ img.header-logo__title{
         margin: 4.5px 0 4.5px;
     }
 
-    header nav.hide-mobile{
-        display: block;
+    .first-screen header nav.hide-mobile{
+        display: flex;
+        width: 830px;
+    }
+    ul.main-menu {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        display: flex;
+        align-items: center;
+        gap: 32px;
     }
 
     header nav.hide-desktop{
         display: none;
     }
-
+    nav.login a {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        margin-right: 36px;
+    }
 }
 @media (min-width: 1440px)  {
     .first-screen{
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
     }
     header{
         height: 128px;
@@ -161,13 +191,29 @@ img.header-logo__title{
         height: 34.2px;
         margin: 4.5px 0 4.5px;
     }
-    header nav.hide-mobile{
-         display: block;
+    .first-screen header nav.hide-mobile{
+         display: flex;
+         width: 980px;
+    /*   Оце мені не подобається як зробити так що воно плавно розміщувалося */
+    }
+    ul.main-menu {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        display: flex;
+        align-items: center;
+        gap: 32px;
     }
     header nav.hide-desktop{
         display: none;
     }
-
-
+    nav.login a {
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px; /*це треба вказувати, і якщо вказувати то в px rem*/
+        margin-right: 36px;
+    }  /*  як прописати щоб не повторювати це у всіх розмірах */
 }
 /*----- End Media Quries -----*/
