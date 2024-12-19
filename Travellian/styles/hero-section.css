@@ -106,24 +106,6 @@ h2{
     flex-direction: column;
 }
 
-/*.content-block-head{*/
-/*    height: 58px;*/
-/*    margin: 20px 20px 0 20px ;*/
-/*    border-bottom: 1px solid var(--border-dark-color);*/
-/*}*/
-/*.content-block-head__title{*/
-/*    font-size: 0.875rem;*/
-/*    font-weight: 400;*/
-/*    color: var(--text-gray-color);*/
-/*    margin-bottom: 12px;*/
-/*}*/
-
-.content-block-head__name{
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--text-Header-dark-color);
-    font-family: Playfair Display ,sans-serif;
-}
 .content-block li{
     height: 62px;
     margin: 40px 20px 20px;
@@ -131,10 +113,22 @@ h2{
 }
 .content-block li div{
     font-size: 0.875rem;
-    font-weight: 400;
     color: var(--text-gray-color);
 }
 
+.content-block .content-block-head__name{
+    font-size: 0.875rem;
+    /*font-weight: 400;*/
+    color: var(--text-Header-dark-color);
+    font-family: Playfair Display ,sans-serif;
+    margin-top: 12px;
+}
+.content-block .label{
+    font-size: 0.875rem;
+    color: var(--text-Header-dark-color);
+    font-family: Playfair Display ,sans-serif;
+    margin-top: 12px;
+}
 .content-block select{
     top: 30px;
     border: none;     /* Видаляє рамку */
@@ -257,6 +251,9 @@ h2{
         width: 158px;
         margin: 40px 20px 20px;
     }
+    .first-screen .content-block li div, select{
+        font-size: 1rem;
+    }
     .btn-content-block{
         width: 170px;
         height: auto;
@@ -334,6 +331,9 @@ h2{
         width: 158px;
         margin: auto 0 ;
     }
+    .first-screen .content-block li div, select{
+        font-size: 1rem;
+    }
     .btn-content-block{
         width: 170px;
         height: auto;
@@ -406,6 +406,12 @@ h2{
         width: 195px;
         margin: auto 0 ;
     }
+    .first-screen .content-block li div, select{
+        font-size: 1rem;
+    }
+    .first-screen .content-block li select{
+        font-size: 1rem;
+    }
     .btn-content-block{
         width: 170px;
         height: auto;
@@ -436,6 +442,12 @@ h2{
         height: 68px;
         width: 225px;
         margin: auto 0 ;
+    }
+    .first-screen .content-block li div, select{
+        font-size: 1rem;
+    }
+    .first-screen .content-block li select{
+        font-size: 1rem;
     }
     /*.btn-content-block{*/
         /*width: 170px;*/

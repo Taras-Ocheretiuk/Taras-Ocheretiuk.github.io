@@ -3,6 +3,14 @@
 @import url('_variables.css');
 @import url('hero-section.css');
 
+:root{
+    --light-color: #FFFFFF;
+    --text-Header-dark-color: #172432; /*Якщо це колі всього тексту то прибрати Хедер*/
+    --orange-color: #FF7757;
+    --border-dark-color: #000000;
+    --text-gray-color: #767E86;
+}
+
 *{
     margin:0;
     padding:0;
@@ -11,6 +19,7 @@
 
 body{
     font-family: rubik, sans-serif;
+    font-weight: 400;
 }
 
 img {
