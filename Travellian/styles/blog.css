@@ -1,0 +1,90 @@
+.blog-content{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.blog-content-img{
+    width: 100%;
+}
+.blog-content h2{
+    margin: 32px 0 24px;
+}
+.blog-content-text{
+    font-size: 1.125rem;
+    color: var(--text-Header-dark-color);
+    line-height: 42px;
+}
+.link {
+    font-size: 1.5rem;
+    color: var(--orange-color);
+    margin-top: 24px;
+    cursor: pointer;
+}
+.link i{
+    margin-left: 20px;
+}
+.blog hr.custom-line{
+    width: 150px;
+}
+/*--------------- Media Quries ---------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+}
+@media (min-width: 768px) and (max-width: 1152px) {
+    .blog-content{
+        flex-direction: row;
+    }
+    .blog-content-img{
+        height: 100%;
+        width: calc(50% - 16px);
+    }
+    .blog-content-description{
+        width: calc(50% - 16px);
+    }
+}
+@media (min-width: 1152px) and (max-width: 1440px) {
+    .blog-content{
+        flex-direction: row;
+    }
+    .blog-content-img, .blog-content-description{
+        width: calc(50% - 16px);
+    }
+    .blog-content-text{
+        font-size: 1.5rem;
+        line-height: 52px;
+    }
+    .blog-content h2{
+        margin: 45px 0 24px;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .blog-content{
+        flex-direction: row;
+    }
+    .blog-content-img, .blog-content-description{
+        width: calc(50% - 16px);
+    }
+    .blog-content-text{
+        font-size: 1.5rem;
+        line-height: 52px;
+    }
+    .blog-content h2{
+        margin: 106px 0 24px;
+    }
+}
+@media (min-width: 1920px){
+    .blog-content{
+        flex-direction: row;
+    }
+    .blog-content-img, .blog-content-description{
+        width: calc(50% - 16px);
+    }
+    .blog-content-text{
+        font-size: 1.5rem;
+        line-height: 52px;
+    }
+    .blog-content h2{
+        margin: 106px 0 24px;
+    }
+}
+/*подивитися може бутуи схожі парапетри в медіазапитах*/

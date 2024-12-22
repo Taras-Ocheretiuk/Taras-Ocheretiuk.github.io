@@ -8,6 +8,7 @@
           integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
@@ -76,12 +77,12 @@
                 Start your unforgettable
                 journey with us.
             </h1>
-            <h2 class="header-content-subtitle">
+            <span>
                 The best travel for your jouney begins now
-            </h2>
+            </span>
         </div>
     </div>
-    <div class="content-block d-flex space-between">
+    <div class="content-block">
         <ul>
             <li>
                 <div class="uppercase">destination</div>
@@ -108,6 +109,63 @@
         </button>
     </div>
 </div>
+<div class="destinations">
+    <div class="content-wrap">
+        <div class="title-block">
+            <h2>
+                Popular Destinations
+            </h2>
+            <hr class="custom-line">
+            <span class="title-block-content">Most popular destinations around the world, from historical placesto natural wonders.</span>
+        </div>
+        <div class="swiper-container swiper-destinations">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Gallery Slide 1</div>
+                <div class="swiper-slide">Gallery Slide 2</div>
+                <div class="swiper-slide">Gallery Slide 3</div>
+            </div>
+            <div class="btn-swiper-container">
+                <button class="btn btn-swiper btn-swiper-left">
+                    <i class="fa-solid fa-chevron-up"></i></button>
+                <button class="btn btn-swiper btn-swiper-right">
+                    <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blog">
+    <div class="content-wrap">
+        <div class="title-block">
+            <h2>
+                Our Blog
+            </h2>
+            <hr class="custom-line">
+            <span class="title-block-content">An insight the incredible experience in the world</span>
+        </div>
+        <div class="blog-content d-flex space-between">
+            <div class="blog-content-img">
+                <img src="img/blog-img.jpg" alt="Beautiful Italy">
+            </div>
+            <div class="blog-content-description">
+                <h2>
+                    Beautiful Italy
+                    <p>
+                        Let’s travel
+                    </p>
+                </h2>
+                <span class="blog-content-text">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues.
+            </span>
+                <p>
+                    <a class="link" href="#">Read More
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
 <script src='script/script.js'></script>
 </body>
 </html>
@@ -115,3 +173,4 @@
 <!--відео 13 1,45,47-->
 <!--відео 13 передивитися як створювалося і додображалося бургер меню бо через місяць не згадаю-->
 <!--font-weight: 400; задав гловально повидаляти із всіх стилів-->
+<!--розібратися н 782 меню схлопується  справа маржин зявляється -->

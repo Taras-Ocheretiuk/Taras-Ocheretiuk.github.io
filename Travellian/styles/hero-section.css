@@ -1,9 +1,7 @@
 .first-screen{
-    height: 100vh;
+    height: 1210px;
     background-image: url('../img/main-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: left;
-/*    розібратися має картинка бути трохи обрізана без неба*/
+    background-position: left bottom;
 }
 
 header{
@@ -85,13 +83,12 @@ nav.hide-mobile-login a {
 
 h1{
     font-family: Playfair Display ,sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: 2.35rem;
     line-height: 53.32px;
     color: var(--light-color);
     margin-top: 100px;
 }
-h2{
+.header-content span{
     font-family: Rubik ,sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
@@ -107,8 +104,8 @@ h2{
 }
 
 .content-block li{
-    height: 62px;
-    margin: 40px 20px 20px;
+    height: 58px;
+    margin: 20px 20px 40px;
     border-bottom: 1px solid var(--border-dark-color);
 }
 .content-block li div{
@@ -118,7 +115,6 @@ h2{
 
 .content-block .content-block-head__name{
     font-size: 0.875rem;
-    /*font-weight: 400;*/
     color: var(--text-Header-dark-color);
     font-family: Playfair Display ,sans-serif;
     margin-top: 12px;
@@ -147,9 +143,8 @@ h2{
     line-height: 47.99px;
     border-radius: 0 0 16px 16px;
     font-family: Playfair Display ,sans-serif;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 0 20px;
-/*    в дизайні 60 розібратися */
     align-items: center; /* Вирівнювання тексту та іконки по вертикалі */
 }
 .btn-content-block i {
@@ -180,15 +175,16 @@ h2{
         font-size: 3.375rem;
         line-height: 71.98px;
     }
-    h2{
+    .header-content span{
         font-size: 1.25rem;
         line-height: 23.7px;
     }
 }
 @media (min-width: 768px) and (max-width: 1152px) {
     html body.first-screen{
+        height: 100vh;
         background-size: cover;
-        background-position: bottom; /*  ------- НЕ СПРАЦЬОВУЄ   */
+        background-position: bottom center; /*не спрацьовує*/
     }
     .first-screen .content-wrap{
         padding: 0 32px;
@@ -231,7 +227,7 @@ h2{
         line-height: 85.31px;
         margin-top: 72px;
     }
-    h2{
+    .header-content span{
         font-size: 1.5rem;
         line-height: 28.44px;
     }
@@ -239,6 +235,7 @@ h2{
         max-width: 1056px;
         border-radius: 0 16px 16px 0;
         margin: 140px 109px 0 0;
+        margin-bottom: 100px;
         flex-direction: row;
     }
     .content-block ul{
@@ -264,8 +261,9 @@ h2{
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
     .first-screen{
+        height: 100vh;
         background-size: cover;
-        background-position: bottom;
+        background-position: center bottom;
     }
 
     .first-screen .content-wrap{
@@ -310,7 +308,7 @@ h2{
         line-height: 111.97px;
         margin-top: 142px;
     }
-    h2{
+    .header-content span{
         font-size: 1.5rem;
         line-height: 28.44px;
     }
@@ -343,8 +341,9 @@ h2{
 }
 @media (min-width: 1440px) and (max-width: 1920px) {
     .first-screen{
+        height: 100vh;
         background-size: cover;
-        background-position: bottom;
+        background-position: center bottom;
     }
 
     .first-screen .content-wrap{
@@ -385,7 +384,7 @@ h2{
         line-height: 111.97px;
         margin-top: 142px;
     }
-    h2{
+    .header-content span{
         font-size: 1.5rem;
         line-height: 28.44px;
     }
@@ -422,8 +421,9 @@ h2{
 
 @media (min-width: 1920px){
     .first-screen{
+        height: 100vh;
         background-size: cover;
-        background-position: bottom;
+        background-position: center bottom;
     }
 
     .content-block{
