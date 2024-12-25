@@ -3,6 +3,7 @@
 @import url('hero-section.css');
 @import url('destinations.css');
 @import url('blog.css');
+@import url('trip_planners.css');
 
 :root{
     --light-color: #FFFFFF;

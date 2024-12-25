@@ -1,6 +1,6 @@
 .blog-content{
     flex-direction: column;
-    margin-top: 100px;
+    margin: 100px 0 100px;
 }
 .blog-content-img{
     width: 100%;

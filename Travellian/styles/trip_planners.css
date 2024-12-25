@@ -1,0 +1,173 @@
+.trip-planners .content-wrap{
+    flex-direction: column;
+}
+
+.blog hr.custom-line{
+    width: 231px;
+}
+.trip-planners .title-block-content {
+    display: block;
+    max-width: 332px;
+}
+.trip-planners-btn-block{
+    height: 91.5px;
+    width: 218px;
+    margin: 32px 0 80px 0;
+
+}
+.btn-trip-planners{
+    font-size: 1.125rem;
+    height: 61px;
+    width: 186px;
+    border-radius: 12px;
+    top: 14.5px;
+    left: 14px;
+}
+
+.rectangle{
+    height: 43px;
+    width: 43px;
+    background-color: var(--text-Header-dark-color);
+}
+.rectangle-gray{
+    background-color: var(--text-gray-color);
+    bottom: 0;
+    right: 0;
+}
+/*.trip-planners-content-box-img{*/
+/*    height: 350px;*/
+/*    width: 250px;*/
+/*}*/
+.trip-planners-content-text{
+    height: 146px;
+    padding: 20px 0 20px;
+}
+.trip-planners-content-text-price-day img{
+    height: 19.2px;
+    width: 20px;
+}
+.trip-planners-content-text-price-guided_tour{
+    font-size: 1.125rem;
+}
+
+.trip-planners-content-text-city{
+    font-size: 1.75rem;
+    font-family: Playfair Display, sans-serif;
+    color: var(--text-Header-dark-color);
+    font-weight: 600;
+    margin: 12px 0 12px;
+}
+.trip-planners-content-text-price-day_tour{
+    font-size: 1.125rem;
+}
+
+/*--------------- Media Quries ---------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .trip-planners-content-text-price-guided_tour{
+        font-size: 1.5rem;
+    }
+    .trip-planners-content-text-city{
+        font-size: 2rem;
+    }
+    .trip-planners-content-text-price-day_tour{
+        font-size: 1.5rem;
+    }
+    .trip-planners-content-text-price-day_tour{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1152px) {
+    .trip-planners .content-wrap{
+        height: 496px;
+        width: 1576px;
+        padding: 0 16px;
+        margin-left:  auto;
+        margin-right: -100px;
+        flex-direction: row;
+    }
+    .trip-planners .trip-planners-content{
+        height: 496px;
+        width: 902px;
+        display: flex;
+        gap: 32px;
+    }
+    .trip-planners .title-block {
+        height: 344.5px;
+        width: 415px;
+        margin-right: 60px;
+    }
+    .trip-planners-content-box-img img{
+        height: 350px;
+        width: 250px;
+    }
+}
+@media (min-width: 1152px) and (max-width: 1440px) {
+    .trip-planners .content-wrap{
+        max-width: 1376px;
+        padding: 0 16px;
+        margin-left:  auto;
+        margin-right: -100px;
+        flex-direction: row;
+    }
+    .trip-planners .trip-planners-content{
+        height: 496px;
+        width: 902px;
+        display: flex;
+        gap: 32px;
+    }
+    .trip-planners .title-block {
+        height: 352.5px;
+        width: 332px;
+    }
+    .trip-planners-content-box-img img{
+        height: 399px;
+        width: 300px;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .trip-planners .content-wrap{
+        max-width: 1376px;
+        padding: 0 16px;
+        margin-left:  auto;
+        margin-right: -100px;
+        flex-direction: row;
+    }
+    .trip-planners .trip-planners-content{
+        height: 496px;
+        width: 902px;
+        display: flex;
+        gap: 32px;
+    }
+    .trip-planners .title-block {
+        height: 352.5px;
+        width: 332px;
+    }
+    .trip-planners-content-box-img img{
+        height: 399px;
+        width: 300px;
+    }
+}
+@media (min-width: 1920px){
+    .trip-planners .content-wrap{
+        max-width: 1376px;
+        padding: 0 16px;
+        margin-left:  auto;
+        margin-right: -100px;
+        flex-direction: row;
+    }
+    .trip-planners .trip-planners-content{
+        height: 496px;
+        width: 902px;
+        display: flex;
+        gap: 32px;
+    }
+    .trip-planners .title-block {
+        height: 352.5px;
+        width: 332px;
+    }
+    .trip-planners-content-box-img img{
+        height: 399px;
+        width: 300px;
+    }
+}
