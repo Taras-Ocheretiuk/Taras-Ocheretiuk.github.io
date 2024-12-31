@@ -1,5 +1,20 @@
-.trip-planners .content-wrap{
+.trip-planners-content-wrap{
     flex-direction: column;
+    max-width: 1556px;
+    /*подумати на рахунок ширини*/
+    padding: 0 16px;
+}
+
+.trip-planners-content{
+    /*width: 100vw;*/
+    flex-direction: column;
+    /*gap: 32px;*/
+}
+
+.trip-planners .trip-planners-content-auxiliary_box{
+    /*height: 496px;*/
+    /*width: 100vw;*/
+    /*position: static;*/
 }
 
 .blog hr.custom-line{
@@ -9,6 +24,7 @@
     display: block;
     max-width: 332px;
 }
+
 .trip-planners-btn-block{
     height: 91.5px;
     width: 218px;
@@ -34,36 +50,42 @@
     bottom: 0;
     right: 0;
 }
-/*.trip-planners-content-box-img{*/
-/*    height: 350px;*/
-/*    width: 250px;*/
-/*}*/
+.trip-planners-content-box-img img{
+    max-height: 320px;
+    max-width: 288px;
+
+}
 .trip-planners-content-text{
     height: 146px;
     padding: 20px 0 20px;
+    position: static;
 }
 .trip-planners-content-text-price-day img{
     height: 19.2px;
     width: 20px;
 }
-.trip-planners-content-text-price-guided_tour{
+.trip-planners-content-auxiliary_box .trip-planners-content-text-price-guided_tour{
     font-size: 1.125rem;
 }
 
-.trip-planners-content-text-city{
+.trip-planners-content-auxiliary_box .trip-planners-content-text-city{
     font-size: 1.75rem;
     font-family: Playfair Display, sans-serif;
     color: var(--text-Header-dark-color);
     font-weight: 600;
     margin: 12px 0 12px;
 }
-.trip-planners-content-text-price-day_tour{
+.trip-planners-content-auxiliary_box .trip-planners-content-text-price-day_tour{
     font-size: 1.125rem;
 }
 
 /*--------------- Media Quries ---------------*/
 
 @media (min-width: 320px) and (max-width: 768px) {
+    .trip-planners-content-box-img img{
+        max-height: 350px;
+        max-width: 728px;
+    }
     .trip-planners-content-text-price-guided_tour{
         font-size: 1.5rem;
     }
@@ -73,84 +95,197 @@
     .trip-planners-content-text-price-day_tour{
         font-size: 1.5rem;
     }
-    .trip-planners-content-text-price-day_tour{
-        font-size: 1.5rem;
-    }
+
 }
 @media (min-width: 768px) and (max-width: 1152px) {
-    .trip-planners .content-wrap{
+    body .trip-planners .trip-planners-content-wrap{
         height: 496px;
-        width: 1576px;
+        min-width: 1600px;
         padding: 0 16px;
         margin-left:  auto;
         margin-right: -100px;
         flex-direction: row;
+        justify-content: space-between;
     }
     .trip-planners .trip-planners-content{
         height: 496px;
-        width: 902px;
-        display: flex;
+        flex-direction: row;
         gap: 32px;
     }
-    .trip-planners .title-block {
+    body .trip-planners .title-block {
         height: 344.5px;
-        width: 415px;
+        max-width: 415px;
         margin-right: 60px;
     }
     .trip-planners-content-box-img img{
         height: 350px;
         width: 250px;
     }
+
+
+    .trip-planners-content-auxiliary_box{
+        height: 496px;
+        width: 250px;
+    }
+
+    .trip-planners-content-box{
+        position: relative;
+    }
+
+
+    .trip-planners-content-box-img {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(28%);
+        transition: transform 0.3s ease;
+        z-index: 2;
+    }
+
+    .trip-planners-content-text {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
+        transform: translateY(0%); /* Рух вгору */
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
+        transform: translateY(250%); /* Рух вниз */
+    }
+
+    /*.trip-planners-content.trip-planners-content-box {*/
+    /*    height: 496px;*/
+    /*    width: 250px;*/
+    /*}  !*томущо абсолют вибиває елементи із потоку і батьківський блок схлопується*!*/
+
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
-    .trip-planners .content-wrap{
-        max-width: 1376px;
+    body .trip-planners .trip-planners-content-wrap{
+        height: 496px;
+        min-width: 1820px;
         padding: 0 16px;
         margin-left:  auto;
         margin-right: -100px;
         flex-direction: row;
+        justify-content: space-between;
     }
     .trip-planners .trip-planners-content{
         height: 496px;
-        width: 902px;
-        display: flex;
+        flex-direction: row;
         gap: 32px;
     }
-    .trip-planners .title-block {
+    body .trip-planners .title-block {
         height: 352.5px;
-        width: 332px;
+        width: 415px;
+        margin: 20px 80px 0 0;
     }
     .trip-planners-content-box-img img{
         height: 399px;
         width: 300px;
     }
+
+
+    .trip-planners-content-auxiliary_box{
+        height: 496px;
+        width: 300px;
+    }
+
+    .trip-planners-content-box{
+        position: relative;
+    }
+
+    .trip-planners-content-box-img {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(25%);
+        transition: transform 0.3s ease;
+        z-index: 2;
+    }
+
+    .trip-planners-content-text {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
+        transform: translateY(-10%); /* Рух вгору */
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
+        transform: translateY(250%); /* Рух вниз */
+    }
+
 }
 @media (min-width: 1440px) and (max-width: 1920px) {
-    .trip-planners .content-wrap{
-        max-width: 1376px;
+    body .trip-planners .trip-planners-content-wrap{
+        height: 496px;
+        min-width: 1800px;
         padding: 0 16px;
         margin-left:  auto;
-        margin-right: -100px;
+        margin-right: -145px;
+        /*тут треба якось через калк і вюпорт*/
         flex-direction: row;
+        justify-content: space-between;
     }
+
     .trip-planners .trip-planners-content{
         height: 496px;
-        width: 902px;
-        display: flex;
+        flex-direction: row;
         gap: 32px;
     }
+
     .trip-planners .title-block {
         height: 352.5px;
-        width: 332px;
+        width: 415px;
+        margin: 20px 80px 0 0;
     }
+
     .trip-planners-content-box-img img{
         height: 399px;
         width: 300px;
+    }
+
+    .trip-planners-content-auxiliary_box{
+        height: 496px;
+        width: 300px;
+    }
+
+    .trip-planners-content-box{
+        position: relative;
+    }
+
+    .trip-planners-content-box-img {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(25%);
+        transition: transform 0.3s ease;
+        z-index: 2;
+    }
+
+    .trip-planners-content-text {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
+        transform: translateY(-10%); /* Рух вгору */
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
+        transform: translateY(250%); /* Рух вниз */
     }
 }
 @media (min-width: 1920px){
-    .trip-planners .content-wrap{
-        max-width: 1376px;
+    body .trip-planners .trip-planners-content-wrap{
+        height: 496px;
+        min-width: 2076px;
         padding: 0 16px;
         margin-left:  auto;
         margin-right: -100px;
@@ -158,16 +293,49 @@
     }
     .trip-planners .trip-planners-content{
         height: 496px;
-        width: 902px;
-        display: flex;
+        flex-direction: row;
         gap: 32px;
     }
     .trip-planners .title-block {
         height: 352.5px;
-        width: 332px;
+        width: 415px;
+        margin: 20px 80px 0 0;
     }
     .trip-planners-content-box-img img{
         height: 399px;
         width: 300px;
+    }
+
+    .trip-planners-content-auxiliary_box{
+        height: 496px;
+        width: 300px;
+    }
+
+    .trip-planners-content-box{
+        position: relative;
+    }
+
+
+    .trip-planners-content-box-img {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(25%);
+        transition: transform 0.3s ease;
+        z-index: 2;
+    }
+
+    .trip-planners-content-text {
+        top: 50%; /* Центрування по вертикалі */
+        position: absolute;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
+        transform: translateY(-10%); /* Рух вгору */
+    }
+
+    .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
+        transform: translateY(250%); /* Рух вниз */
     }
 }

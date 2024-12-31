@@ -119,11 +119,11 @@
             <span class="title-block-content">Most popular destinations around the world, from historical placesto natural wonders.</span>
         </div>
         <div class="swiper-container swiper-destinations">
-<!--            <div class="swiper-wrapper">-->
-<!--                <div class="swiper-slide">Gallery Slide 1</div>-->
-<!--                <div class="swiper-slide">Gallery Slide 2</div>-->
-<!--                <div class="swiper-slide">Gallery Slide 3</div>-->
-<!--            </div>-->
+            <!--            <div class="swiper-wrapper">-->
+            <!--                <div class="swiper-slide">Gallery Slide 1</div>-->
+            <!--                <div class="swiper-slide">Gallery Slide 2</div>-->
+            <!--                <div class="swiper-slide">Gallery Slide 3</div>-->
+            <!--            </div>-->
             <div class="btn-swiper-container">
                 <button class="btn btn-swiper btn-swiper-left">
                     <i class="fa-solid fa-chevron-up"></i></button>
@@ -165,8 +165,9 @@
         </div>
     </div>
 </div>
-<div class="trip-planners">
-    <div class="content-wrap d-flex">
+<section class="trip-planners">
+    <div class="trip-planners-content-wrap d-flex">
+        <!--        створив trip-planners-content-wrap тому що не міг перебити ширину content-wrap-->
         <div class="title-block">
             <h2>
                 Trip Planners
@@ -177,117 +178,233 @@
                 <div class="rectangle"></div>
                 <div class="rectangle rectangle-gray absolute"></div>
                 <button class="btn btn-trip-planners absolute">
-                    View all trip plans</button>
+                    View all trip plans
+                </button>
             </div>
         </div>
-        <div class="trip-planners-content">
-            <a href="#" class="trip-planners-content-box" style="display: block;">
-                <div class="trip-planners-content-box-img">
-                    <img src="img/Rome-Col-block.jpg" alt="Rome City Tour">
-                </div>
-                <div class="trip-planners-content-text">
-                    <div class="trip-planners-content-text-price d-flex space-between">
-                        <div class="trip-planners-content-text-price-guided_tour uppercase">
-                            Guided Tour
+        <div class="trip-planners-content d-flex">
+            <div class="trip-planners-content-auxiliary_box">
+                <a href="#" class="trip-planners-content-box " style="display: block;">
+                    <div class="trip-planners-content-box-img ">
+                        <img src="img/Rome-Col-block.jpg" alt="Rome City Tour">
+                    </div>
+                    <div class="trip-planners-content-text ">
+                        <div class="trip-planners-content-text-price d-flex space-between">
+                            <div class="trip-planners-content-text-price-guided_tour uppercase">
+                                Guided Tour
+                            </div>
+                            <div class="trip-planners-content-text-price-tag">€99/Day</div>
                         </div>
-                        <div class="trip-planners-content-text-price-tag">€99/Day</div>
-                    </div>
-                    <div class="trip-planners-content-text-city">
-                        Rome City Tour
-                    </div>
-                    <div class="trip-planners-content-text-price-day d-flex space-between">
-                        <div class="trip-planners-content-text-price-day_star d-flex">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                        <div class="trip-planners-content-text-city">
+                            Rome City Tour
                         </div>
-                        <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="trip-planners-content-box" style="display: block;">
-                <div class="trip-planners-content-box-img">
-                    <img src="img/Paris-Col-block.jpg" alt="Paris City Tour">
-                </div>
-                <div class="trip-planners-content-text">
-                    <div class="trip-planners-content-text-price d-flex space-between">
-                        <div class="trip-planners-content-text-price-guided_tour uppercase">
-                            Guided Tour
+                        <div class="trip-planners-content-text-price-day d-flex space-between">
+                            <div class="trip-planners-content-text-price-day_star d-flex">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                            <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
                         </div>
-                        <div class="trip-planners-content-text-price-tag">€95/Day</div>
                     </div>
-                    <div class="trip-planners-content-text-city">
-                        Paris City Tour
+                </a>
+            </div>
+            <div class="trip-planners-content-auxiliary_box">
+                <a href="#" class="trip-planners-content-box" style="display: block;">
+                    <div class="trip-planners-content-box-img">
+                        <img src="img/Paris-Col-block.jpg" alt="Paris City Tour">
                     </div>
-                    <div class="trip-planners-content-text-price-day d-flex space-between">
-                        <div class="trip-planners-content-text-price-day_star d-flex">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                    <div class="trip-planners-content-text ">
+                        <div class="trip-planners-content-text-price d-flex space-between">
+                            <div class="trip-planners-content-text-price-guided_tour uppercase">
+                                Guided Tour
+                            </div>
+                            <div class="trip-planners-content-text-price-tag">€95/Day</div>
                         </div>
-                        <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="trip-planners-content-box" style="display: block;">
-                <div class="trip-planners-content-box-img">
-                    <img src="img/Barcelona-Col-block.jpg" alt="Barcelona City Tour">
-                </div>
-                <div class="trip-planners-content-text">
-                    <div class="trip-planners-content-text-price d-flex space-between">
-                        <div class="trip-planners-content-text-price-guided_tour uppercase">
-                            Guided Tour
+                        <div class="trip-planners-content-text-city">
+                            Paris City Tour
                         </div>
-                        <div class="trip-planners-content-text-price-tag">€89/Day</div>
-                    </div>
-                    <div class="trip-planners-content-text-city">
-                        Barcelona City Tour
-                    </div>
-                    <div class="trip-planners-content-text-price-day d-flex space-between">
-                        <div class="trip-planners-content-text-price-day_star d-flex">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                        <div class="trip-planners-content-text-price-day d-flex space-between">
+                            <div class="trip-planners-content-text-price-day_star d-flex">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                            <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
                         </div>
-                        <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="trip-planners-content-box" style="display: block;">
-                <div class="trip-planners-content-box-img">
-                    <img src="img/Budapest-Col-block.jpg" alt="Budapest City Tour">
-                </div>
-                <div class="trip-planners-content-text">
-                    <div class="trip-planners-content-text-price d-flex space-between">
-                        <div class="trip-planners-content-text-price-guided_tour uppercase">
-                            Guided Tour
+                </a>
+            </div>
+            <div class="trip-planners-content-auxiliary_box">
+                <a href="#" class="trip-planners-content-box" style="display: block;">
+                    <div class="trip-planners-content-box-img">
+                        <img src="img/Barcelona-Col-block.jpg" alt="Barcelona City Tour">
+                    </div>
+                    <div class="trip-planners-content-text">
+                        <div class="trip-planners-content-text-price d-flex space-between">
+                            <div class="trip-planners-content-text-price-guided_tour uppercase">
+                                Guided Tour
+                            </div>
+                            <div class="trip-planners-content-text-price-tag">€89/Day</div>
                         </div>
-                        <div class="trip-planners-content-text-price-tag">€89/Day</div>
-                    </div>
-                    <div class="trip-planners-content-text-city">
-                        Budapest City Tour
-                    </div>
-                    <div class="trip-planners-content-text-price-day d-flex space-between">
-                        <div class="trip-planners-content-text-price-day_star d-flex">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                        <div class="trip-planners-content-text-city">
+                            Barcelona City Tour
                         </div>
-                        <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
+                        <div class="trip-planners-content-text-price-day d-flex space-between">
+                            <div class="trip-planners-content-text-price-day_star d-flex">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                            <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            <div class="trip-planners-content-auxiliary_box">
+                <a href="#" class="trip-planners-content-box" style="display: block;">
+                    <div class="trip-planners-content-box-img">
+                        <img src="img/Budapest-Col-block.jpg" alt="Budapest City Tour">
+                    </div>
+                    <div class="trip-planners-content-text">
+                        <div class="trip-planners-content-text-price d-flex space-between">
+                            <div class="trip-planners-content-text-price-guided_tour uppercase">
+                                Guided Tour
+                            </div>
+                            <div class="trip-planners-content-text-price-tag">€89/Day</div>
+                        </div>
+                        <div class="trip-planners-content-text-city">
+                            Budapest City Tour
+                        </div>
+                        <div class="trip-planners-content-text-price-day d-flex space-between">
+                            <div class="trip-planners-content-text-price-day_star d-flex">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                            <div class="trip-planners-content-text-price-day_tour">7 Days tour</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<section class="newsletter">
+    <div class="content-wrap">
+        <div class="newsletter-title">
+            Our Newsletter
+        </div>
+        <div class="newsletter-email">
+            Email
+            <div class="newsletter-email-box d-flex space-between">
+                <input class="newsletter-email-enter" type="email" placeholder="Enter your email">  </input>
+                <button class="btn btn-newsletter">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="content-wrap">
+        <div class="footer-grid d-flex space-between">
+            <div class="footer-grid-item">
+                <div class="header-logo d-flex">
+                    <img src="img/logo.svg" alt="logo">
+                    <img src="img/logo-title.svg" alt="logo-title" class="header-logo__title">
+                </div>
+                <div class="copyright">Copyright © Travellian 2020 All rights reserved</div>
+            </div>
+            <div class="footer-grid-item">
+                <div class="footer-grid-item-title"> Menu</div>
+                <div class="footer-grid-item-content">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Explore</a>
+                            </li>
+                            <li>
+                                <a href="#">Travel</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-grid-item">
+                <div class="footer-grid-item-title">Information</div>
+                <div class="footer-grid-item-content">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Destinations</a>
+                            </li>
+                            <li>
+                                <a href="#">Supports</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-grid-item">
+                <div class="footer-grid-item-title">Contact Info</div>
+                <div class="footer-grid-item-content">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="tel:+123456789">+123 456 789</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@travellian.com">info@travellian.com</a>
+                            </li>
+                            <li>
+                                <a href="#">1245, New Yourk, USA</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-grid-item">
+                <div class="footer-grid-item-title">Follow us on</div>
+                <div class="footer-grid-item-content">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
 <script src='script/script.js'></script>
 </body>
