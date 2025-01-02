@@ -37,5 +37,6 @@
     .footer-grid {
         flex-direction: row;
         gap: 10px;
+        padding-top: 240px;
     }
 }

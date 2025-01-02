@@ -10,13 +10,13 @@ burgerIcons.addEventListener('click',() => {
 })
 
 
-const destinationsSwiper = new Swiper('.swiper-destinations', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-destinations .btn-swiper-right',
-        prevEl: '.swiper-destinations .btn-swiper-left',
-    },
-    autoplay: {
-        delay: 3000,
-    },
-});
+// const destinationsSwiper = new Swiper('.swiper-destinations', {
+//     loop: true,
+//     navigation: {
+//         nextEl: '.swiper-destinations .btn-swiper-right',
+//         prevEl: '.swiper-destinations .btn-swiper-left',
+//     },
+//     autoplay: {
+//         delay: 3000,
+//     },
+// });

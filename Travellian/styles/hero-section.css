@@ -37,7 +37,9 @@ img.header-logo__title{
     font-size: 2rem;
     transition: all .7s ease;
     background-color: var(--light-color);
+    border: 5px solid var(--text-Header-dark-color);
     border-radius: 15px;
+    z-index: 2;
 }
 
 .mobile-menu li{
@@ -82,6 +84,7 @@ nav.hide-mobile-login a {
 }
 
 h1{
+    width: 100%;
     font-family: Playfair Display ,sans-serif;
     font-size: 2.35rem;
     line-height: 53.32px;
@@ -181,8 +184,8 @@ h1{
     }
 }
 @media (min-width: 768px) and (max-width: 1152px) {
-    html body.first-screen{
-        height: 100vh;
+    body div.first-screen{
+        height: 880px;
         background-size: cover;
         background-position: bottom center; /*не спрацьовує*/
     }
@@ -220,7 +223,7 @@ h1{
         display: none;
     }
     .header-content{
-        max-width: 700px;
+        max-width: 935px;
     }
     h1{
         font-size: 4rem;
@@ -261,7 +264,8 @@ h1{
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
     .first-screen{
-        height: 100vh;
+        /*height: 100vh;*/
+        height: 880px;
         background-size: cover;
         background-position: center bottom;
     }
@@ -301,12 +305,12 @@ h1{
         display: none;
     }
     .header-content{
-        max-width: 900px;
+        max-width: 1000px;
     }
     h1{
         font-size: 5.25rem;
         line-height: 111.97px;
-        margin-top: 142px;
+        margin-top: 72px;
     }
     .header-content span{
         font-size: 1.5rem;
@@ -339,9 +343,9 @@ h1{
         margin: 0 0 0 100px;
     }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
     .first-screen{
-        height: 100vh;
+        height: 1194px;
         background-size: cover;
         background-position: center bottom;
     }
@@ -377,7 +381,8 @@ h1{
         display: none;
     }
     .header-content{
-        max-width: 900px;
+        height: 268px;
+        max-width: 1000px;
     }
     h1{
         font-size: 5.25rem;
@@ -390,9 +395,9 @@ h1{
     }
     .content-block{
         max-width: 1205px;
-        height: 176px;
+        height: 216px;
         border-radius: 0 16px 16px 0;
-        margin: 140px 109px 0 0;
+        margin: 170px 109px 0 0;
         flex-direction: row;
     }
     .content-block ul{
@@ -419,43 +424,43 @@ h1{
     }
 }
 
-@media (min-width: 1920px){
-    .first-screen{
-        height: 100vh;
-        background-size: cover;
-        background-position: center bottom;
-    }
+/*@media (min-width: 1920px){*/
+/*    .first-screen{*/
+/*        height: 100vh;*/
+/*        background-size: cover;*/
+/*        background-position: center bottom;*/
+/*    }*/
 
-    .content-block{
-        max-width: 1473px;
-        height: 216px;
-        border-radius: 0 16px 16px 0;
-        margin: 170px 109px 0 0;
-        flex-direction: row;
-    }
-    .content-block ul{
-        display: flex;
-        gap: 40px;
-        margin-left: 182px;
-    }
-    .content-block li{
-        height: 68px;
-        width: 225px;
-        margin: auto 0 ;
-    }
-    .first-screen .content-block li div, select{
-        font-size: 1rem;
-    }
-    .first-screen .content-block li select{
-        font-size: 1rem;
-    }
-    /*.btn-content-block{*/
-        /*width: 170px;*/
-        /*height: auto;*/
-        /*border-radius: 0 16px 16px 0;*/
-        /*margin: 0 0 0 100px;*/
-    /*}*/
-}
+/*    .content-block{*/
+/*        max-width: 1473px;*/
+/*        height: 216px;*/
+/*        border-radius: 0 16px 16px 0;*/
+/*        margin: 170px 109px 0 0;*/
+/*        flex-direction: row;*/
+/*    }*/
+/*    .content-block ul{*/
+/*        display: flex;*/
+/*        gap: 40px;*/
+/*        margin-left: 182px;*/
+/*    }*/
+/*    .content-block li{*/
+/*        height: 68px;*/
+/*        width: 225px;*/
+/*        margin: auto 0 ;*/
+/*    }*/
+/*    .first-screen .content-block li div, select{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*    .first-screen .content-block li select{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*    !*.btn-content-block{*!*/
+/*        !*width: 170px;*!*/
+/*        !*height: auto;*!*/
+/*        !*border-radius: 0 16px 16px 0;*!*/
+/*        !*margin: 0 0 0 100px;*!*/
+/*    !*}*!*/
+/*}*/
 
 /*----- End Media Quries -----*/
-/*Порівняти чи різничи між 1152-1440 і 1440 і більше - Порівняти здається воно однакове*/
+
