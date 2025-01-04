@@ -1,9 +1,12 @@
-.swiper-slide {
-    /*position: relative;*/
-    /*height: 320px;*/
-    /*width: 100%;*/
-    /*background-color: #172432;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*gap: 16px;*/
+.destinations__content {
+
+
+    width: 100%;
+    background-color: #172432;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.destinations__items img{
+    width: 497px;
 }

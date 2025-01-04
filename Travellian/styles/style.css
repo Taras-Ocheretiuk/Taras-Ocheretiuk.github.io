@@ -6,6 +6,8 @@
 @import url('trip_planners.css');
 @import url('footer.css');
 @import url('newsletter.css');
+@import url('gallery.css');
+
 
 :root{
     --light-color: #FFFFFF;
@@ -128,17 +130,21 @@ hr.custom-line {
     height: 60px;
     width: 60px;
     border-radius: 12px;
+    background-color: var(--text-Header-dark-color);
 }
 
-.btn-swiper-left{
-    background-color: var(--text-Header-dark-color);
+.section__shev{
     margin-right: 40px;
 }
 
-.btn-swiper-left i{
-    transform: rotate(-90deg) scale(1.5);
+.btn-swiper:hover{
+    background-color: var(--orange-color);
 }
 
+.section__shev i{
+    transform: rotate(-90deg) scale(1.5);
+}
+/* взагалі то був клас btn-swiper-left*/
 .btn-swiper-right i{
     transform: rotate(90deg) scale(1.5);
 }

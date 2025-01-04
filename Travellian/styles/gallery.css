@@ -1,0 +1,40 @@
+.gallery hr.custom-line{
+    width: 288px;
+}
+
+.gallery-content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 100px 0 80px 0;
+}
+
+.gallery-content-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /*max-width: 288px;*/
+    /*object-fit: cover; !* забезпечує збереження пропорцій та заповнення блоку *!*/
+}
+
+/*--------------- Media Quries ---------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .gallery-content-box img {
+        max-height: 351px; /* Максимальна висота */
+        width: 100%;       /* Ширина займає весь контейнер */
+        height: auto;      /* Автоматичне збереження пропорцій */
+        object-fit: contain; /* Масштабування з урахуванням пропорцій */
+    }
+}
+@media (min-width: 768px) and (max-width: 1152px) {
+
+}
+@media (min-width: 1152px) and (max-width: 1440px) {
+
+}
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1920px){
+
+}

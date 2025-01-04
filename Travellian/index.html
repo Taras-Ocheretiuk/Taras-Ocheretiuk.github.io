@@ -8,8 +8,14 @@
           integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
     <link href="styles/style.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
 </head>
 <body>
 <div class="first-screen">
@@ -117,18 +123,28 @@
             <hr class="custom-line">
             <span class="title-block-content">Most popular destinations around the world, from historical placesto natural wonders.</span>
         </div>
-        <div class="swiper-container swiper-destinations">
-            <!--            <div class="swiper-wrapper">-->
-            <!--                <div class="swiper-slide">Gallery Slide 1</div>-->
-            <!--                <div class="swiper-slide">Gallery Slide 2</div>-->
-            <!--                <div class="swiper-slide">Gallery Slide 3</div>-->
-            <!--            </div>-->
-            <div class="btn-swiper-container">
-                <button class="btn btn-swiper btn-swiper-left">
-                    <i class="fa-solid fa-chevron-up"></i></button>
-                <button class="btn btn-swiper btn-swiper-right">
-                    <i class="fa-solid fa-chevron-up"></i></button>
+        <div class="destinations__content d-flex">
+            <div class="destinations__items">
+                <img class="destinations__img" src="img/Destinations_Berlin.jpg" alt="">
             </div>
+            <div class="destinations__items">
+                <img class="destinations__img" src="img/Destinations_London.jpg" alt="">
+            </div>
+            <div class="destinations__items">
+                <img class="destinations__img" src="img/Destinations_Venice.jpg" alt="">
+            </div>
+            <div class="destinations__items">
+                <img class="destinations__img" src="img/Destinations_Lisbon.png" alt="">
+            </div>
+            <div class="destinations__items">
+                <img class="destinations__img" src="img/Destinations_Thailand.png" alt="">
+            </div>
+        </div>
+        <div class="btn-swiper-container">
+            <button id="destinations__left" class="btn btn-swiper section__shev">
+                <i class="fa-solid fa-chevron-up"></i></button>
+            <button id="destinations__rigth" class="btn btn-swiper btn-swiper-right">
+                <i class="fa-solid fa-chevron-up"></i></button>
         </div>
     </div>
 </div>
@@ -297,19 +313,45 @@
         </div>
     </div>
 </section>
+<section class="gallery">
+    <div class="content-wrap">
+        <div class="title-block">
+            <h2>
+                Destination Gallery
+            </h2>
+            <hr class="custom-line">
+            <span class="title-block-content">Our photo gallery on trip</span>
+        </div>
+        <div class="gallery-content d-flex">
+            <a href="#" class="gallery-content-box" style="display: block;">
+                <img src="img/gallery_1.jpg" alt="img street art">
+            </a>
+            <a href="#" class="gallery-content-box" style="display: block;">
+                <img src="img/gallery_2.jpg" alt="img coast ocean">
+            </a>
+            <a href="#" class="gallery-content-box" style="display: block;">
+                <img src="img/gallery_3.jpg" alt="img street">
+            </a>
+            <a href="#" class="gallery-content-box" style="display: block;">
+                <img src="img/gallery_4.jpg" alt="img railway tracks">
+            </a>
+            
+        </div>
+    </div>
+</section>
 <section class="newsletter">
-        <div class="content-wrap d-flex space-between">
-            <div class="newsletter-title">
-                Our Newsletter
-            </div>
-            <div class="newsletter-email">
-                Email
-                <div class="newsletter-email-box d-flex space-between">
-                    <input class="newsletter-email-enter" type="email" placeholder="Enter your email"> </input>
-                    <button class="btn btn-newsletter">Subscribe</button>
-                </div>
+    <div class="content-wrap d-flex space-between">
+        <div class="newsletter-title">
+            Our Newsletter
+        </div>
+        <div class="newsletter-email">
+            Email
+            <div class="newsletter-email-box d-flex space-between">
+                <input class="newsletter-email-enter" type="email" placeholder="Enter your email"> </input>
+                <button class="btn btn-newsletter">Subscribe</button>
             </div>
         </div>
+    </div>
 </section>
 <section class="footer">
     <div class="content-wrap">
@@ -409,7 +451,7 @@
 </body>
 </html>
 
-<!--відео 13 1,45,47-->
+
 <!--відео 13 передивитися як створювалося і додображалося бургер меню бо через місяць не згадаю-->
 <!--font-weight: 400; задав гловально повидаляти із всіх стилів-->
 <!--розібратися н 782 меню схлопується  справа маржин зявляється -->

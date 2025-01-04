@@ -149,7 +149,7 @@
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
-        transform: translateY(0%); /* Рух вгору */
+        transform: translateY(13%); /* Рух вгору */
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
@@ -213,7 +213,7 @@
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
-        transform: translateY(-10%); /* Рух вгору */
+        transform: translateY(10%); /* Рух вгору */
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
@@ -275,7 +275,7 @@
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
-        transform: translateY(-10%); /* Рух вгору */
+        transform: translateY(10%); /* Рух вгору */
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {
@@ -332,7 +332,7 @@
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-box-img {
-        transform: translateY(-10%); /* Рух вгору */
+        transform: translateY(10%); /* Рух вгору */
     }
 
     .trip-planners-content-auxiliary_box:hover .trip-planners-content-text {

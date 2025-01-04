@@ -20,3 +20,24 @@ burgerIcons.addEventListener('click',() => {
 //         delay: 3000,
 //     },
 // });
+
+// Slider
+
+const destinations = document.querySelector(".destinations__content")
+const destinationsFirstImg = destinations.querySelectorAll("img")[0];
+const destinationsBtn = document.querySelectorAll(".destinations .section__shev")
+
+console.log(destinationsFirstImg)
+
+
+destinationsBtn.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = destinationsFirstImg.clientWidth + 35
+        if(icon.id  === "destinations__left" ){// тут було ==
+            destinations.scrollLeft -= firstImgWidth
+        }else{
+            destinations.scrollLeft += firstImgWidth
+        }
+
+    })
+});
