@@ -1,0 +1,119 @@
+.offer-content{
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.offer-content-box{
+    border-radius: 26px;
+    background-color: var(--light-beige-color);
+    width: 100%;
+}
+
+.offer-content-box-img img{
+    min-height: 286px;
+}
+
+.offer-content-box-text{
+    padding: 20px 20px;
+}
+
+.offer-content-box-text-title{
+    color: var(--text-gray-color);
+    font-size: 1.75rem;
+    font-family: Mulish, sans-serif;
+    margin-bottom: 8px;
+/*    треба вставити цей муліш*/
+}
+
+.offer-content-box-text-description{
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 24px 0;
+}
+
+.offer-content-box-text-price{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offer-content-box-text-price-box{
+    margin: auto 0;
+}
+
+.offer-content-box-text-price-box span{
+    color: var(--text-gray-color);
+    font-size: 1.125rem;
+    vertical-align: middle;
+
+}
+
+span.offer-content-box-text-price-box-amount{
+    color: var(--orange-color);
+    font-size: 2rem;
+}
+
+.offer button {
+    font-size: 1.25rem;
+    min-height: 56px;
+    width: 127px;
+    border-radius: 12px;
+}
+
+
+/*--------------- Media Quries ---------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .offer-content{
+        margin-top: 100px;
+    }
+
+    .offer .title-block{
+        text-align: right;
+    }
+
+    .offer .custom-line{
+        margin-left: auto;
+    }
+
+    .offer-content-box-text{
+        padding: 20px 24px;
+    }
+    .offer-content-box-text-price{
+        flex-direction: row;
+    }
+}
+@media (min-width: 768px) and (max-width: 1152px) {
+    .offer-content{
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .offer-content-box-text{
+        padding: 20px 24px;
+    }
+
+    .offer-content-box-text-price{
+        flex-direction: row;
+    }
+}
+@media (min-width: 1152px) {
+    .offer-content{
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    .offer-content-box-text{
+        padding: 40px 24px;
+    }
+
+    .offer button {
+        font-size: 1.25rem;
+        min-height: 64px;
+        min-width: 159px;
+    }
+
+    .offer-content-box-text-price{
+        flex-direction: row;
+    }
+}

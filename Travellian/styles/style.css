@@ -7,6 +7,7 @@
 @import url('footer.css');
 @import url('newsletter.css');
 @import url('gallery.css');
+@import url('offer.css');
 
 
 :root{
@@ -16,6 +17,7 @@
     --orange-light-color: #FFE8D4;
     --border-dark-color: #000000;
     --text-gray-color: #767E86;
+    --light-beige-color: #FFF8F1;
 }
 
 *{
@@ -147,6 +149,11 @@ hr.custom-line {
 /* взагалі то був клас btn-swiper-left*/
 .btn-swiper-right i{
     transform: rotate(90deg) scale(1.5);
+}
+
+.rating-star img{
+    height: 19.2px;
+    width: 20px;
 }
 
 /*--------------- Media Quries ---------------*/

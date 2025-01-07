@@ -53,17 +53,16 @@
 .trip-planners-content-box-img img{
     max-height: 320px;
     max-width: 288px;
-
+    object-fit: cover;
+    border-radius: 26px;
 }
+
 .trip-planners-content-text{
     height: 146px;
     padding: 20px 0 20px;
     position: static;
 }
-.trip-planners-content-text-price-day img{
-    height: 19.2px;
-    width: 20px;
-}
+
 .trip-planners-content-auxiliary_box .trip-planners-content-text-price-guided_tour{
     font-size: 1.125rem;
 }
