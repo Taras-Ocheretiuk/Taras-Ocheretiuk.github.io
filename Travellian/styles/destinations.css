@@ -1,12 +1,13 @@
-.destinations__content {
 
-
-    width: 100%;
-    background-color: #172432;
-    flex-direction: row;
-    gap: 16px;
+.destinations img{
+    height: 320px;
 }
 
-.destinations__items img{
-    width: 497px;
+.swiper-button-next {
+    top: 100%;
+    z-index: 9999;
+}
+
+.swiper-button-prev{
+    top: 100%;
 }

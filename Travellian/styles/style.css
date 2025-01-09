@@ -122,34 +122,30 @@ hr.custom-line {
     outline: none;
     cursor: pointer;
 }
-.btn-swiper-container{
-    height: 60px;
-    width: 172px;
-    margin: 100px auto 0;
-}
+/*.btn-swiper-container{*/
+/*    height: 60px;*/
+/*    width: 172px;*/
+/*    margin: 100px auto 0;*/
+/*}*/
 
-.btn-swiper{
-    height: 60px;
-    width: 60px;
-    border-radius: 12px;
-    background-color: var(--text-Header-dark-color);
-}
+/*.btn-swiper{*/
+/*    height: 60px;*/
+/*    width: 60px;*/
+/*    border-radius: 12px;*/
+/*    background-color: var(--text-Header-dark-color);*/
+/*}*/
 
-.section__shev{
-    margin-right: 40px;
-}
+/*.section__shev{*/
+/*    margin-right: 40px;*/
+/*}*/
 
-.btn-swiper:hover{
-    background-color: var(--orange-color);
-}
+/*.btn-swiper:hover{*/
+/*    background-color: var(--orange-color);*/
+/*}*/
 
-.section__shev i{
-    transform: rotate(-90deg) scale(1.5);
-}
-/* взагалі то був клас btn-swiper-left*/
-.btn-swiper-right i{
-    transform: rotate(90deg) scale(1.5);
-}
+/*.btn-swiper-right i{*/
+/*    transform: rotate(90deg) scale(1.5);*/
+/*}*/
 
 .rating-star img{
     height: 19.2px;

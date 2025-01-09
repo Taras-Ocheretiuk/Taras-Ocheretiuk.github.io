@@ -10,34 +10,24 @@ burgerIcons.addEventListener('click',() => {
 })
 
 
-// const destinationsSwiper = new Swiper('.swiper-destinations', {
-//     loop: true,
-//     navigation: {
-//         nextEl: '.swiper-destinations .btn-swiper-right',
-//         prevEl: '.swiper-destinations .btn-swiper-left',
-//     },
-//     autoplay: {
-//         delay: 3000,
-//     },
-// });
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-// Slider
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-const destinations = document.querySelector(".destinations__content")
-const destinationsFirstImg = destinations.querySelectorAll("img")[0];
-const destinationsBtn = document.querySelectorAll(".destinations .section__shev")
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-console.log(destinationsFirstImg)
-
-
-destinationsBtn.forEach(icon => {
-    icon.addEventListener("click", () => {
-        let firstImgWidth = destinationsFirstImg.clientWidth + 35
-        if(icon.id  === "destinations__left" ){// тут було ==
-            destinations.scrollLeft -= firstImgWidth
-        }else{
-            destinations.scrollLeft += firstImgWidth
-        }
-
-    })
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
