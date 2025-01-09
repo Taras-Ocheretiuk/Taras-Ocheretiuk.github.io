@@ -1,3 +1,6 @@
+html body.destinations div.content-wrap .swiper{
+    overflow: visible;
+}
 
 .destinations img{
     height: 320px;
