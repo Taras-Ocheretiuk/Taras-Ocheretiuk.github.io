@@ -128,24 +128,19 @@ hr.custom-line {
 /*    margin: 100px auto 0;*/
 /*}*/
 
-/*.btn-swiper{*/
-/*    height: 60px;*/
-/*    width: 60px;*/
-/*    border-radius: 12px;*/
-/*    background-color: var(--text-Header-dark-color);*/
-/*}*/
+.swiper-button-prev, .swiper-button-next{
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    background-color: var(--text-Header-dark-color);
+}
 
-/*.section__shev{*/
-/*    margin-right: 40px;*/
-/*}*/
-
-/*.btn-swiper:hover{*/
-/*    background-color: var(--orange-color);*/
-/*}*/
-
-/*.btn-swiper-right i{*/
-/*    transform: rotate(90deg) scale(1.5);*/
-/*}*/
+.swiper-button-next:hover{
+    background-color: var(--orange-color);
+}
+.swiper-button-prev:hover{
+    background-color: var(--orange-color);
+}
 
 .rating-star img{
     height: 19.2px;
