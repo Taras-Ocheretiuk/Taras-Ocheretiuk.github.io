@@ -1,21 +1,23 @@
 .swiper{
     height: 480px;
-    width: 320px;
+    max-width: 288px;
     margin-top: 100px;
 }
 
 .destinations img{
-    height: 320px;
+    max-height: 320px;
     border-radius: 26px;
 }
 
 
 .swiper-button-next {
     top: 90%;
+    left: calc(50% + 0px);
 }
 
 .swiper-button-prev{
     top: 90%;
+    left: calc(50% - 76px);
 }
 
 /*--------------- Media Quries ---------------*/
@@ -31,17 +33,97 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1152px) {
+    .destinations .title-block span{
+        max-width: 600px;
+        display: block;
+    }
     .swiper{
-        /*height: 480px;*/
-        /*width: 320px;*/
+        height: 700px;
+        max-width: calc(42vw - 32px);
         overflow: visible;
         margin-left: 0;
     }
 
     .swiper-slide{
+        height: 661px;
+        width: 497px;
         margin: 0 32px;
     }
-}
-@media (min-width: 1152px) {
 
+    .destinations img{
+        max-height: 661px;
+        width: calc(42vw - 32px);
+        object-fit: cover;
+    }
+
+    .swiper-button-next {
+        top: -15%;
+        left: calc(100vw - 92px);
+    }
+
+    .swiper-button-prev{
+        top: -15%;
+        left: calc(100vw - 184px);
+    }
+}
+@media (min-width: 1152px) and (max-width: 1440px) {
+    .swiper{
+        height: 700px;
+        max-width: calc(35vw - 32px);
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .swiper-slide{
+        height: 661px;
+        width: 497px;
+        margin: 0 32px;
+    }
+
+    .destinations img{
+        max-height: 661px;
+        width: calc(35vw - 32px);
+        object-fit: cover;
+    }
+
+    .swiper-button-next {
+        top: -15%;
+        left: calc(100vw - 92px);
+    }
+
+    .swiper-button-prev{
+        top: -15%;
+        left: calc(100vw - 184px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .swiper{
+        height: 700px;
+        max-width: calc(25vw - 32px);
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .swiper-slide{
+        height: 661px;
+        width: 497px;
+        margin: 0 32px;
+    }
+
+    .destinations img{
+        max-height: 661px;
+        width: calc(25vw - 32px);
+        object-fit: cover;
+    }
+
+    .swiper-button-next {
+        top: -15%;
+        left: calc(100vw - 262px);
+    }
+
+    .swiper-button-prev{
+        top: -15%;
+        left: calc(100vw - 364px);
+    }
 }
