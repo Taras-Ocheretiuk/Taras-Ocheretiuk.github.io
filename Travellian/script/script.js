@@ -31,3 +31,19 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+const url = './api.json'
+
+function populate() {
+    axios.get(url)
+        .then(responce => {
+            populateHeader(responce.data);
+            populateHeroes(responce.data.mambers);
+        })
+}
+
+function populateHeader(data) {
+    console.log(data)
+}
+
+populate();
