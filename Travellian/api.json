@@ -2,29 +2,29 @@
   "reviews": [
     {
       "id": 1,
-      "avatar-url": "./img/Avatar_JD.jpg",
-      "avatar-alt": "JD",
+      "avatar_url": "./img/Avatar_JD.jpg",
+      "avatar_alt": "JD",
       "review": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
       "rating": 4,
-      "user-mane": "John Doe",
+      "user_mane": "John Doe",
       "profession": "Accountant"
     },
     {
       "id": 2,
-      "avatar-url": "./img/Avatar_JS.jpg",
-      "avatar-alt": "JS",
+      "avatar_url": "./img/Avatar_JS.jpg",
+      "avatar_alt": "JS",
       "review": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
       "rating": 3,
-      "user-mane": "John Smith",
+      "user_mane": "John Smith",
       "profession": "Journalist, HWO News"
     },
     {
       "id": 3,
-      "avatar-url": "./img/Avatar_TB.jpg",
-      "avatar-alt": "TB",
+      "avatar_url": "./img/Avatar_TB.jpg",
+      "avatar_alt": "TB",
       "review": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.",
       "rating": 5,
-      "user-mane": "Tamara Bellis",
+      "user_mane": "Tamara Bellis",
       "profession": "Managing Director, JTH"
     }
   ]

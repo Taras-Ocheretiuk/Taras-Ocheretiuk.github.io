@@ -32,18 +32,42 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-const url = './api.json'
+const url = 'https://raw.githubusercontent.com/Taras-Ocheretiuk/Taras-Ocheretiuk.github.io/main/Travellian/api.json';
 
-function populate() {
-    axios.get(url)
-        .then(responce => {
-            populateHeader(responce.data);
-            populateHeroes(responce.data.mambers);
+axios.get(url)
+    .then(response => {
+            populate(response.data);
         })
+
+function populate(data){
+    const experiences_content = document.getElementById('experiences_content')
+
+
+    for (var i = 0; i < data.reviews.length; i++) {
+        const el = document.createElement('div')
+        el.className = 'experiences-content-box'
+
+        const img = document.createElement('img');
+        img.src = data.reviews[i].avatar_url;
+        const divT = document.createElement('div');
+        divT.textContent =url.reviews[i].review;
+
+        // rating
+
+        const divN = document.createElement('div');
+        divN.textContent = data.reviews[i].user_name;
+        const divP = document.createElement('div');
+        divP.textContent = data.reviews[i].profession;
+
+        el.append(img)
+        el.append(divT)
+        el.append(divN)
+        el.append(divP)
+
+        experiences_content.append(el)
+
+    }
+
 }
 
-function populateHeader(data) {
-    console.log(data)
-}
-
-populate();
+// populate(response);
