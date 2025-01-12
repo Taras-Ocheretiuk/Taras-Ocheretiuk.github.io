@@ -1,0 +1,51 @@
+.experiences-content{
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.experiences-content-box {
+    font-size: 1.125rem;
+    line-height: 23px;
+    color: var(--text-gray-color);
+    background-color: var(--light-gray);
+    border-radius: 12px;
+    margin: 100px 0 0 0 ;
+    padding: 60px 20px 32px;
+    position: relative;
+}
+
+.experiences-content-box-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+}
+
+.experiences-content-box-text {
+    margin-bottom: 20px;
+}
+
+.experiences-content-box-user_name {
+    font-size: 1.5rem;
+    font-family: Playfair Display, sans-serif;
+    margin: 20px 0 4px;
+}
+
+/*--------------- Media Quries ---------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .experiences-content{
+        margin-bottom: 160px;
+    }
+
+    .experiences-content-box {
+        margin: 160px 0 0 0 ;
+    }
+}
+@media (min-width: 768px) {
+    .experiences-content{
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 0px;
+    }
+}

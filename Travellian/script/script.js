@@ -34,10 +34,12 @@ const swiper = new Swiper('.swiper', {
 
 const url = 'https://raw.githubusercontent.com/Taras-Ocheretiuk/Taras-Ocheretiuk.github.io/main/Travellian/api.json';
 
+
 axios.get(url)
     .then(response => {
             populate(response.data);
-        })
+    })
+
 
 function populate(data){
     const experiences_content = document.getElementById('experiences_content')
@@ -45,29 +47,41 @@ function populate(data){
 
     for (var i = 0; i < data.reviews.length; i++) {
         const el = document.createElement('div')
-        el.className = 'experiences-content-box'
+        el.className = 'experiences-content-box';
 
         const img = document.createElement('img');
         img.src = data.reviews[i].avatar_url;
-        const divT = document.createElement('div');
-        divT.textContent =url.reviews[i].review;
+        img.className = 'experiences-content-box-avatar';
 
-        // rating
+        const divT = document.createElement('div');
+        divT.textContent = data.reviews[i].review;
+        divT.className = 'experiences-content-box-text';
+
+        const divRating = document.createElement('div');
+        divRating.textContent = '';
+        divRating.className = 'rating-star d-flex';
+
+        for (var j = 0; j < data.reviews[i].rating; j++){
+            const img = document.createElement('img');
+            img.src = 'img/star.svg';
+            img.alt = 'star';
+            divRating.appendChild(img);
+        }
 
         const divN = document.createElement('div');
         divN.textContent = data.reviews[i].user_name;
+        divN.className = 'experiences-content-box-user_name';
+
         const divP = document.createElement('div');
         divP.textContent = data.reviews[i].profession;
+        divP.className = 'experiences-content-box-profession';
 
         el.append(img)
         el.append(divT)
+        el.append(divRating)
         el.append(divN)
         el.append(divP)
 
         experiences_content.append(el)
-
     }
-
 }
-
-// populate(response);
