@@ -39,11 +39,15 @@ input::placeholder {
     text-align: center;
     outline: none;
     border: none;
+    min-width: 160px;
 }
 
-/*--------------- Media Quries ---------------*/
 
-@media (min-width: 320px) and (max-width: 768px) {
+/*--------------- Media Quries ---------------*/
+@media (min-width: 320px) and (max-width: 380px) {
+
+}
+@media (min-width: 380px) and (max-width: 768px) {
     .newsletter-title{
         font-size: 3.375rem;
     }
@@ -58,7 +62,7 @@ input::placeholder {
 @media (min-width: 768px) and (max-width: 1152px) {
     .newsletter{
         position: relative;
-        min-width: 1080px;
+        /*min-width: 1080px;*/
         /*подумати може тут 100 вюпорта поставити*/
         height: 232px;
     }
@@ -72,7 +76,7 @@ input::placeholder {
     }
     .newsletter-title{
         font-size: 3.375rem;
-        margin: 80px 10px 80px 0;
+        margin: auto 10px auto 0;
         white-space: nowrap;
     }
     .newsletter-email{
@@ -94,7 +98,7 @@ input::placeholder {
 @media (min-width: 1152px)  {
     body .newsletter{
         position: relative;
-        width: 100vw;
+        /*width: 100vw;*/
         height: 232px;
         display: flex;
         justify-content: center;
@@ -103,14 +107,15 @@ input::placeholder {
         flex-direction: row;
         height: 232px;
         max-width: 1120px;
-        width: 100%;
+        width: calc(100vw - 66px);
         position: absolute;
         top: 50%;
         z-index: 2;
     }
     .newsletter-title{
         font-size: 4rem;
-        margin: 60px 20px 87px 20px;
+        margin: auto 20px;
+        white-space: nowrap;
     }
     .newsletter-email{
         margin: 60px 20px 60px 0;

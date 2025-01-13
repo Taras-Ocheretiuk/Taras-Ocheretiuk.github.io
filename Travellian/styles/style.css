@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('hero-section.css');
 @import url('destinations.css');
+@import url('offer.css');
 @import url('blog.css');
 @import url('trip_planners.css');
-@import url('footer.css');
-@import url('newsletter.css');
 @import url('gallery.css');
 @import url('experiences.css');
-@import url('offer.css');
+@import url('newsletter.css');
+@import url('footer.css');
 
 
 :root{
@@ -124,11 +125,6 @@ hr.custom-line {
     outline: none;
     cursor: pointer;
 }
-/*.btn-swiper-container{*/
-/*    height: 60px;*/
-/*    width: 172px;*/
-/*    margin: 100px auto 0;*/
-/*}*/
 
 .swiper-button-prev, .swiper-button-next{
     height: 60px;
@@ -151,13 +147,18 @@ hr.custom-line {
 
 /*--------------- Media Quries ---------------*/
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 455px) and (max-width: 768px) {
     h2{
         font-size: 3.375rem;
         line-height: 71.98px;
     }
 }
 @media (min-width: 768px) {
+
+    .content-wrap {
+        padding: 0 32px;
+    }
+
     h2 {
         font-size: 4rem;
         line-height: 85.31px;
