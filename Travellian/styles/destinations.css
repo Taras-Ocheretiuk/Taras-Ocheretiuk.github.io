@@ -1,3 +1,4 @@
+
 .swiper{
     height: 480px;
     max-width: 288px;
@@ -34,7 +35,7 @@
 }
 @media (min-width: 768px) and (max-width: 1152px) {
     .destinations .title-block span{
-        max-width: 600px;
+        max-width: 500px;
         display: block;
     }
     .swiper{
@@ -58,12 +59,12 @@
 
     .swiper-button-next {
         top: -15%;
-        left: calc(100vw - 92px);
+        left: calc(100vw - 124px);
     }
 
     .swiper-button-prev{
         top: -15%;
-        left: calc(100vw - 184px);
+        left: calc(100vw - 244px);
     }
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
@@ -88,16 +89,16 @@
 
     .swiper-button-next {
         top: -15%;
-        left: calc(100vw - 92px);
+        left: calc(100vw - 124px);
     }
 
     .swiper-button-prev{
         top: -15%;
-        left: calc(100vw - 184px);
+        left: calc(100vw - 244px);
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1920px){
     .swiper{
         height: 700px;
         max-width: calc(25vw - 32px);
@@ -119,11 +120,11 @@
 
     .swiper-button-next {
         top: -15%;
-        left: calc(100vw - 262px);
+        left: calc(100vw - 322px);
     }
 
     .swiper-button-prev{
         top: -15%;
-        left: calc(100vw - 364px);
+        left: calc(100vw - 444px);
     }
 }
