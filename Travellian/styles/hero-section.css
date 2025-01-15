@@ -26,7 +26,8 @@ img.header-logo__title{
 }
 
 .mobile-menu{
-    width: calc(100vw - 64px);
+    color: var(--light-color);
+    width: calc(100vw - 32px);
     height: calc(100vh - 98px);
     left: -10000px;
     top: 98px;
@@ -36,7 +37,8 @@ img.header-logo__title{
     gap: 20px;
     font-size: 2rem;
     transition: all .7s ease;
-    background-color: var(--light-color);
+    background-color: rgba(0, 0, 0, 0.8); /* Чорний колір з прозорістю 50% */
+    backdrop-filter: blur(10px); /* Розмиття фону за елементом */
     border: 5px solid var(--text-Header-dark-color);
     border-radius: 15px;
     z-index: 2;
@@ -151,6 +153,7 @@ h1{
 .btn-content-block i {
     font-size: 21px;
 }
+
 /*--------------- Media Quries ---------------*/
 
 @media (min-width: 320px) and (max-width: 768px) {
