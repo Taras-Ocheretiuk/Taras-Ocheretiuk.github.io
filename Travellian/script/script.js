@@ -14,25 +14,31 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 'auto',
-    // spaceBetween: 0,
-
-    // If we need pagination
+    slidesPerView: 1,
+    spaceBetween: 32,
     // pagination: {
-    //     el: '.swiper-pagination',
+    //     el: ".swiper-pagination",
+    //     clickable: true,
     // },
+    breakpoints: {
+        768: {
+            slidesPerView: 2.4,
+        },
+        1152: {
+            slidesPerView: 2.8,
+        },
+        1440: {
+            slidesPerView: 3.2,
+        },
+    },
 
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
 });
+
 
 const url = 'https://raw.githubusercontent.com/Taras-Ocheretiuk/Taras-Ocheretiuk.github.io/main/Travellian/api.json';
 
