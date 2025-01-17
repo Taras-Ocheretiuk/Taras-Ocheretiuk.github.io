@@ -183,9 +183,9 @@ h1{
 }
 @media (min-width: 768px) and (max-width: 1152px) {
     body div.first-screen{
-        height: 880px;
+        height: 600px;
         background-size: cover;
-        background-position: bottom center; /*не спрацьовує*/
+        background-position: center bottom; /*не спрацьовує*/
     }
     .first-screen .content-wrap{
         padding: 0 32px;
@@ -233,7 +233,7 @@ h1{
     .content-block{
         max-width: 1056px;
         border-radius: 0 16px 16px 0;
-        margin: 140px 109px 0 0;
+        margin: 50px 109px 0 0;
         margin-bottom: 100px;
         flex-direction: row;
     }
@@ -243,9 +243,8 @@ h1{
         gap: 40px;
     }
     .content-block li{
-        height: 63px;
         width: 158px;
-        margin: 40px 20px 20px;
+        margin: 20px 20px 20px;
     }
     .first-screen .content-block li div, select{
         font-size: 1rem;
@@ -260,7 +259,6 @@ h1{
 }
 @media (min-width: 1152px) and (max-width: 1440px) {
     .first-screen{
-        /*height: 100vh;*/
         height: 880px;
         background-size: cover;
         background-position: center bottom;
@@ -419,44 +417,5 @@ h1{
         margin: 0 0 0 100px;
     }
 }
-
-/*@media (min-width: 1920px){*/
-/*    .first-screen{*/
-/*        height: 100vh;*/
-/*        background-size: cover;*/
-/*        background-position: center bottom;*/
-/*    }*/
-
-/*    .content-block{*/
-/*        max-width: 1473px;*/
-/*        height: 216px;*/
-/*        border-radius: 0 16px 16px 0;*/
-/*        margin: 170px 109px 0 0;*/
-/*        flex-direction: row;*/
-/*    }*/
-/*    .content-block ul{*/
-/*        display: flex;*/
-/*        gap: 40px;*/
-/*        margin-left: 182px;*/
-/*    }*/
-/*    .content-block li{*/
-/*        height: 68px;*/
-/*        width: 225px;*/
-/*        margin: auto 0 ;*/
-/*    }*/
-/*    .first-screen .content-block li div, select{*/
-/*        font-size: 1rem;*/
-/*    }*/
-/*    .first-screen .content-block li select{*/
-/*        font-size: 1rem;*/
-/*    }*/
-/*    !*.btn-content-block{*!*/
-/*        !*width: 170px;*!*/
-/*        !*height: auto;*!*/
-/*        !*border-radius: 0 16px 16px 0;*!*/
-/*        !*margin: 0 0 0 100px;*!*/
-/*    !*}*!*/
-/*}*/
-
 /*----- End Media Quries -----*/
 
