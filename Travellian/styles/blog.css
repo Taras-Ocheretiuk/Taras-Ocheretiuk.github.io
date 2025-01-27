@@ -57,7 +57,7 @@
         margin: 45px 0 24px;
     }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
     .blog-content{
         flex-direction: row;
     }
@@ -72,19 +72,3 @@
         margin: 106px 0 24px;
     }
 }
-@media (min-width: 1920px){
-    .blog-content{
-        flex-direction: row;
-    }
-    .blog-content-img, .blog-content-description{
-        width: calc(50% - 16px);
-    }
-    .blog-content-text{
-        font-size: 1.5rem;
-        line-height: 52px;
-    }
-    .blog-content h2{
-        margin: 106px 0 24px;
-    }
-}
-/*подивитися може бутуи схожі парапетри в медіазапитах*/

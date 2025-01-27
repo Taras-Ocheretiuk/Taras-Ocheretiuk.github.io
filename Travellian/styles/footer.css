@@ -29,10 +29,8 @@
     margin: 0 24px 24px 0;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+/*--------------- Media Quries ---------------*/
 
-
-}
 @media (min-width: 768px) {
     .footer-grid {
         flex-direction: row;
